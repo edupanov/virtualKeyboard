@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+body {
+    background: #cbccb8;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.area {
+    width: 900px;
+    height: 300px;
+    border: 3px solid gray;
+    border-radius: 30px;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    resize: none;
+}
+
+.keyboard {
+    display: flex;
+    width: 930px;
+    flex-wrap: wrap;
+}
+
+.key {
+    margin: 4px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background: #fbfff4;
+    border: 2px solid gray;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+}
+.active {
+    animation-duration: 0.5s;
+    animation-name: keyClick;
+    background: #ffdf46;
+}
+.key:hover {
+    background: #ffdf46;
+}
+.key:active {
+    animation-duration: 0.3s;
+    animation-name: keyClick;
+    background: #ffdf46;
+}
+
+.backSpace,
+.caps,
+.enter,
+.shift {
+    width: 111px;
+}
+
+.space {
+    width: 483px;
+}
